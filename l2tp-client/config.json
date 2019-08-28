@@ -7,8 +7,11 @@
   "boot": "auto",
   "map": ["config"],
   "host_network": true,
+  "full_access": true,
   "devices": [ "/dev/ppp:/dev/ppp:rwm" ],
-  "privileged" : [ "NET_ADMIN" ],
+  "privileged" : [ 
+  	"NET_ADMIN"
+  ],
   "options": {
     "target": "165.22.90.83:5001"
   },
