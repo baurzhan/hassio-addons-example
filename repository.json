@@ -1,5 +1,5 @@
 {
-  "name": "Hass.IO example add-on repository",
-  "url": "https://home-assistant.io/",
-  "maintainer": "HomeAssistant <info@home-assistant.io>"
+  "name": "l2tp add-on repository",
+  "url": "https://oilab.ninja/",
+  "maintainer": "HomeAssistant <info@oilab.ninja>"
 }

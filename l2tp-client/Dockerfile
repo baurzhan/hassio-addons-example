@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Setup base
-RUN apk add --no-cache jq
+RUN apk add --no-cache jq xl2tpd
 
 # Copy data
 COPY run.sh /

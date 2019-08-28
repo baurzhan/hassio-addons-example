@@ -1,0 +1,23 @@
+{
+  "name": "L2tp-client",
+  "version": "0.1",
+  "slug": "l2tp",
+  "description": "L2tp client",
+  "startup": "once",
+  "boot": "manual",
+  "map": ["config"],
+  "host_network": true,
+  "devices": [ "/dev/ppp:/dev/ppp:rwm" ],
+  "privileged" : [ "NET_ADMIN" ],
+  "options": {
+    "target": null,
+    "username": null,
+    "password": ""
+  },
+  "schema": {
+    "target": "str",
+    "username": "str",
+    "password": "str"
+  },
+  "image": "oilab/{arch}-2ltp-client"
+}
