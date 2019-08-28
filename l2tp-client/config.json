@@ -10,14 +10,10 @@
   "devices": [ "/dev/ppp:/dev/ppp:rwm" ],
   "privileged" : [ "NET_ADMIN" ],
   "options": {
-    "target": null,
-    "username": null,
-    "password": ""
+    "target": "65.22.90.83:5001",
   },
   "schema": {
     "target": "str",
-    "username": "str",
-    "password": "str"
   },
   "arch": [
     "amd64",
