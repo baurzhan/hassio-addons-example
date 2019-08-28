@@ -19,5 +19,12 @@
     "username": "str",
     "password": "str"
   },
+  "arch": [
+    "amd64",
+    "armhf",
+    "i386",
+    "armv7",
+    "aarch64"
+  ],
   "image": "oilab/{arch}-2ltp-client"
 }
