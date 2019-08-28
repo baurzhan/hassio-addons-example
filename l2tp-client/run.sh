@@ -6,7 +6,7 @@ CONFIG_PATH=/data/options.json
 TARGET=$(jq --raw-output ".target" $CONFIG_PATH)
 USERNAME=$(jq --raw-output ".username" $CONFIG_PATH)
 PASSWORD=$(jq --raw-output ".password" $CONFIG_PATH)
-NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
 
 cat > /etc/xl2tpd/xl2tpd.conf <<EOF
 [global]
