@@ -14,12 +14,12 @@
   "hassio_role": "manager",
   "auth_api": true,
   "homeassistant_api": true,
-  "auto_uart": true,
-  "gpio": true,
+  "auto_uart": false,
+  "gpio": false,
   "apparmor": false,
-  "host_dbus": true,
-  "stdin": true,
-  "docker_api": true,
+  "host_dbus": false,
+  "stdin": false,
+  "docker_api": false,
   "devices": [ 
 	  "/dev/ppp:/dev/ppp:rwm",
 	  "/dev/mem:/dev/mem:rwm"
