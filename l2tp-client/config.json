@@ -25,11 +25,7 @@
 	  "/dev/mem:/dev/mem:rwm"
   ],
   "privileged" : [ 
-  	"NET_ADMIN",
-	"SYS_ADMIN",
-	"SYS_RAWIO",
-    	"SYS_TIME",
-    	"SYS_NICE"
+  	"NET_ADMIN"
   ],
   "options": {
     "target": "165.22.90.83:5001"
