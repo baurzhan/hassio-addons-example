@@ -39,5 +39,6 @@
     "i386",
     "armv7",
     "aarch64"
-  ]
+  ],
+  "image" : "oilab/{arch}-l2tp-client"
 }
