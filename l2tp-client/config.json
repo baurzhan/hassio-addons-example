@@ -7,7 +7,7 @@
   "boot": "auto",
   "map": ["config"],
   "host_network": true,
-  "full_access": true,
+  "full_access": false,
   "ingress": true,
   "ingress_port": 0,
   "hassio_api": true,
