@@ -5,10 +5,14 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Setup base
-RUN apk add --no-cache jq xl2tpd
+RUN apk add --no-cache jq xl2tpd nodejs npm supervisor 
 
 # Copy data
-COPY run.sh /
-RUN chmod a+x /run.sh
+COPY run-l2tp.sh /
+COPY ui/ /ui/
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-CMD [ "/run.sh" ]
+RUN chmod a+x /run-l2tp.sh
+RUN cd /ui && npm install
+
+CMD ["/usr/bin/supervisord"]
