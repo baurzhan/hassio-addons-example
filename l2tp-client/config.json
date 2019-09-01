@@ -9,7 +9,7 @@
   "host_network": true,
   "full_access": false,
   "ingress": true,
-  "ingress_port": 0,
+  "ingress_port": 8099,
   "hassio_api": true,
   "hassio_role": "manager",
   "auth_api": true,
