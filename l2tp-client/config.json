@@ -5,7 +5,7 @@
   "description": "L2tp client",
   "startup": "system",
   "boot": "auto",
-  "map": ["config","share:rw"],
+  "map": ["config"],
   "host_network": true,
   "full_access": false,
   "ingress": true,
