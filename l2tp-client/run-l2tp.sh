@@ -5,7 +5,7 @@ TARGET=$(jq --raw-output ".target" $CONFIG_PATH)
 USERNAME=$(jq --raw-output ".username" $CONFIG_PATH)
 PASSWORD=$(jq --raw-output ".password" $CONFIG_PATH)
 #/usr/bin/head -c 100 /dev/urandom | /usr/bin/tr -dc "a-zA-Z0-9" | /usr/bin/fold -w 12 | /usr/bin/head -n 1 > /user-id
-NEW_USER_ID=$(</user-id)
+NEW_USER_ID=$(</share/user-id)
 cat > /etc/xl2tpd/xl2tpd.conf <<EOF
 [global]
 access control = no
