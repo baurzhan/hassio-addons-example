@@ -11,7 +11,7 @@ const server = app.listen(8099, () => {
 });
 
 app.get('/', (req, res) => {
-	var user = fs.readFileSync('/user-id', 'utf8');
+	var user = fs.readFileSync('/data/user-id', 'utf8');
 	var qrRequest = qr.toDataURL(user + '.oilab.ninja');
 	qrRequest.then( value => {
 			res.render('index', {
