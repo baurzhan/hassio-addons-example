@@ -1,8 +1,8 @@
 {
-  "name": "L2tp-client",
+  "name": "CHCloudClient",
   "version": "0.1",
-  "slug": "l2tp",
-  "description": "L2tp client",
+  "slug": "CHCloudClient",
+  "description": "CH Cloud Client",
   "startup": "system",
   "boot": "auto",
   "map": ["config"],
@@ -20,7 +20,7 @@
   "host_dbus": false,
   "stdin": false,
   "docker_api": false,
-  "panel_icon": "mdi:home-import-outline",
+  "panel_icon": "mdi:virtual-private-network",
   "devices": [ 
 	  "/dev/ppp:/dev/ppp:rwm",
 	  "/dev/mem:/dev/mem:rwm"
@@ -29,10 +29,15 @@
   	"NET_ADMIN"
   ],
   "options": {
-    "target": "165.22.90.83:5001"
+    "server": "165.22.90.83:5001",
+    "login": "162@oilab.ninja",
+    "password": "smarthome"
   },
   "schema": {
-    "target": "str"
+    "server": "str",
+    "login": "email",
+    "password": "str",
+    "salt": "bool?"
   },
   "arch": [
     "amd64",
