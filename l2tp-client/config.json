@@ -1,7 +1,7 @@
 {
   "name": "CHCloudClient",
   "version": "0.1",
-  "slug": "CHCloudClient",
+  "slug": "l2tp",
   "description": "CH Cloud Client",
   "startup": "system",
   "boot": "auto",
@@ -13,7 +13,7 @@
   "hassio_api": false,
   "hassio_role": "manager",
   "auth_api": false,
-  "homeassistant_api": false,
+  "homeassistant_api": true,
   "auto_uart": false,
   "gpio": false,
   "apparmor": false,
@@ -46,5 +46,5 @@
     "armv7",
     "aarch64"
   ],
-  "image" : "oilab/{arch}-l2tp-client"
+  "image" : "oilab/{arch}-chcloud-client"
 }
