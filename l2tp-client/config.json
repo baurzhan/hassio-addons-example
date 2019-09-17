@@ -31,13 +31,14 @@
   "options": {
     "server": "165.22.90.83:5001",
     "login": "162@oilab.ninja",
-    "password": "smarthome"
+    "password": "smarthome",
+    "salt": 3
   },
   "schema": {
     "server": "str",
     "login": "email",
     "password": "str",
-    "salt": "bool?"
+    "salt": "int(0,16)"
   },
   "arch": [
     "amd64",
