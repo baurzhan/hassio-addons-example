@@ -40,6 +40,9 @@
     "password": "str",
     "salt": "int(0,16)"
   },
+  "environment" : {
+    "L2TP_SERVER_IP": "10.64.0.1"
+  },
   "arch": [
     "amd64",
     "armhf",
