@@ -1,6 +1,6 @@
 {
   "name": "CHCloudClient",
-  "version": "0.4",
+  "version": "0.5",
   "slug": "l2tp",
   "description": "CH Cloud Client",
   "startup": "system",
@@ -29,8 +29,8 @@
   	"NET_ADMIN"
   ],
   "options": {
-    "server": "165.22.90.83:5001",
-    "login": "162@oilab.ninja",
+    "server": "chcloud.home.bi.group",
+    "login": "162@chcloud.home.bi.group",
     "password": "smarthome",
     "salt": 3
   },
