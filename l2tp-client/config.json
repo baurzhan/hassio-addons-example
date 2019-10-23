@@ -1,6 +1,6 @@
 {
   "name": "CHCloudClient",
-  "version": "0.6c",
+  "version": "0.6d",
   "slug": "l2tp",
   "description": "CH Cloud Client",
   "startup": "system",
