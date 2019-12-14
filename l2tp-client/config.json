@@ -1,6 +1,6 @@
 {
   "name": "CHCloudClient",
-  "version": "0.6.2",
+  "version": "0.7.1",
   "slug": "l2tp",
   "description": "CH Cloud Client",
   "startup": "system",
@@ -41,7 +41,8 @@
     "salt": "int(0,16)"
   },
   "environment" : {
-    "L2TP_SERVER_IP": "10.64.0.1"
+    "L2TP_SERVER_IP": "10.64.0.1",
+    "LOGIN": "`hostname`"
   },
   "arch": [
     "amd64",
