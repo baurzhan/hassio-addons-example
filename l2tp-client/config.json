@@ -1,6 +1,6 @@
 {
   "name": "CHCloudClient",
-  "version": "0.7.27",
+  "version": "0.7.28",
   "slug": "l2tp",
   "description": "CH Cloud Client",
   "startup": "system",
@@ -29,16 +29,10 @@
   	"NET_ADMIN"
   ],
   "options": {
-    "server": "chcloud.home.bi.group",
-    "login": "162@chcloud.home.bi.group",
-    "password": "smarthome",
-    "salt": 3
+    "login": "162@chcloud.home.bi.group"
   },
   "schema": {
-    "server": "str",
-    "login": "email",
-    "password": "str",
-    "salt": "int(0,16)"
+    "login": "email"
   },
   "environment" : {
     "L2TP_SERVER_IP": "10.64.0.1",
