@@ -1,6 +1,6 @@
 {
   "name": "CHCloudClient rp-l2tp",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "slug": "rp-l2tp",
   "description": "CH Cloud Client",
   "startup": "application",
