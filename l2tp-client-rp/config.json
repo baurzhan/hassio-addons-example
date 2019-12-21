@@ -1,0 +1,47 @@
+{
+  "name": "CHCloudClient rp-l2tp",
+  "version": "0.8.3",
+  "slug": "rp-l2tp",
+  "description": "CH Cloud Client",
+  "startup": "application",
+  "boot": "auto",
+  "map": ["config"],
+  "host_network": true,
+  "full_access": false,
+  "ingress": false,
+  "ingress_port": 8099,
+  "hassio_api": false,
+  "hassio_role": "manager",
+  "auth_api": false,
+  "homeassistant_api": true,
+  "auto_uart": false,
+  "gpio": false,
+  "apparmor": false,
+  "host_dbus": false,
+  "stdin": false,
+  "docker_api": false,
+  "panel_icon": "mdi:virtual-private-network",
+  "devices": [ 
+	  "/dev/ppp:/dev/ppp:rwm",
+	  "/dev/mem:/dev/mem:rwm"
+  ],
+  "privileged" : [ 
+  	"NET_ADMIN"
+  ],
+  "options": {
+    "login": "162@chcloud.home.bi.group"
+  },
+  "schema": {
+    "login": "email"
+  },
+  "environment" : {
+    "L2TP_SERVER_IP": "10.64.0.1"
+  },
+  "arch": [
+    "amd64",
+    "armhf",
+    "i386",
+    "armv7"
+  ],
+  "image" : "oilab/{arch}-chcloud-client-rp"
+}
